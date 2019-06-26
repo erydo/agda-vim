@@ -3,6 +3,8 @@
 let s:cpo_save = &cpo
 set cpo&vim
 
+let g:agda#enable_omni = get(g:, 'agda#enable_omni', 1)
+
 " Public to allow referencing in custom overrides.
 if !exists('g:agda#default_glyphs')
   let g:agda#default_glyphs = {}
